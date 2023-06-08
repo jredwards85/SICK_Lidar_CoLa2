@@ -19,7 +19,7 @@ Follow the prompts:
 1. Enter the IP address of the device.
 2. Enter the IP address of the target (E.g., your PC).
 3. Enter the port number of the target.
-4. Select the device type (0 ... 3).
+4. Select the device type (0 ... 4).
 - EFI-pro: 0
 - EtherNet/IP: 1
 - EtherCAT: 2
