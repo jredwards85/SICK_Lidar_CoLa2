@@ -28,7 +28,7 @@ Follow the prompts:
 5. Select either full data output or custom data output.
 - Full data output provides the full scanning range, every scan and all data blocks
 - If selecting full data output, skip to step 11.
-6. Select the sending range (1 ... 40).
+6. Select the sending rate (1 ... 40).
 7. Select the starting angle (min. -47.5 °).
 8. Select the ending angle (max. 227.5 °).
 9. Activate all data blocks or custom data blocks.
