@@ -7,7 +7,7 @@ Version 1.0.3 created on 10.05.2023 by James Edwards
 
 ### How to run the program?
 1. Install Python (minimum version 3.10.4). Download Python here: https://www.python.org/downloads/ 
-2. Associalte .py file extensions with Python (this is usually automatically done).
+2. Associated .py file extensions with Python (this is usually automatically done).
 3. Run the CoLa2_Session_Handler_V#.##.py and the program will open a command window.
 4. Follow the prompts in the command window.
 
@@ -37,6 +37,3 @@ In most cases the program will tell you when a problem occurs. The most common e
 
 ### 'Hard-coded' values in the program.
 - The port '2122' is fixed. This is the current port used by the SICK microScan3, outdoorScan3 and nanoScan3.
-- The CoLa session creation request of '02 02 02 02 00 00 00 0d 00 00 00 00 00 00 00 01 4f 58 1e 00 00' is pre-programmed.
-
-
