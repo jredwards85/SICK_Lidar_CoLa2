@@ -1,4 +1,4 @@
-# Cola2_Session_Handler_V1.0.3.py
+# Cola2_Data_Output_Activator_V1.0.0.py
 Version 1.0.0 created on 08.06.2023 by James Edwards
 
 ### What does the 'CoLa2 Data Output Activator' do?
