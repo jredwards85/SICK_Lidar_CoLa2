@@ -286,7 +286,6 @@ try:
         input("Press enter to exit.")
         exit()
 
-    # TO DO - HOW WE HANDLE THE RESPONSE
     # Prints the response from port 2122 and closes the TCP session
     commandResponse = data.hex()
     if commandResponse[32:36] == "4149":
