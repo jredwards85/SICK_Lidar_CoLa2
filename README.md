@@ -2,13 +2,13 @@
 Version 1.0.0 created on 08.06.2023 by James Edwards
 
 ### What does the 'CoLa2 Data Output Activator' do?
-- This program will trigger the UDP data output of a SICK microScan3, outdoorScan3 or nanoScan3 ('device) according to the given parameters.
+- This program will trigger the UDP data output of a SICK microScan3, outdoorScan3 or nanoScan3 ('device') according to the given parameters.
 - The user is prompted to enter a select of parameters to configure the UDP data output of the device. In addition, the tool checks that the given parameters are correct and within specification of the device.
 - The UDP data output, when activated successfully, is active until power off. This has no impact on the safety functions of the device.
 
 ### How to run the program?
 1. Install Python (minimum version 3.10.4). Download Python here: https://www.python.org/downloads/ 
-2. Associated .py file extensions with Python (this is usually automatically done).
+2. Associate .py file extensions with Python (this is usually automatically done).
 3. Run the CoLa2_Session_Handler_V#.##.py and the program will open a command window.
 4. Follow the prompts in the command window.
 
