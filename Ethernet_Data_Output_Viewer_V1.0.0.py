@@ -33,7 +33,7 @@ if modeRead == False:
         udpIndexes = []
         index = 0
 
-        for i in range(0, 25, 1):
+        for i in range(0, 24, 1):
             index = dataDump.find("4d533320", index)
             if index != -1:
                 udpHeaders.append(dataDump[index:index+48])
@@ -82,7 +82,7 @@ if modeRead == False:
             udpIndexes = []
             index = 0
 
-            for i in range(0, 100, 1):
+            for i in range(0, 24, 1):
                 index = dataDump.find("4d533320", index)
                 if index != -1:
                     udpHeaders.append(dataDump[index:index+48])
