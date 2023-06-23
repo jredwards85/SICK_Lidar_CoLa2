@@ -1,5 +1,5 @@
 # Ethernet Data Output Viewer
-Version 1.0.0 created on 22.06.2023 by James Edwards
+Version 1.0.1 created on 23.06.2023 by James Edwards
 
 ### What does the 'Ethernet Data Output Viewer' do?
 - This program will either read the configured (via Safety Designer) measurement data output from a SICK microScan3, outdoorScan3 or nanoScan3 ('device') or read a pasted TCP/UDP data output sample, and then save the read/pasted data to a .txt file in a readable format.
