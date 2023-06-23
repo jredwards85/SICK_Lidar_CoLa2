@@ -289,7 +289,7 @@ try:
     time = datetime.datetime.now()
     nameExtension = time.strftime("%d-%m-%Y_%H-%M-%S")
     file = open(f"DataOutput_{nameExtension}.txt", "w", encoding="utf8")
-    file.write("Ethernet data output viewer (V1.0.0) by James Edwards\n\nThe following data blocks are included in addition to the header:\n")
+    file.write("Ethernet data output viewer (V1.0.1) by James Edwards\n\nThe following data blocks are included in addition to the header:\n")
 
     if blockStatusOffset != 0:
         blockStatus = True
@@ -917,17 +917,21 @@ try:
 except ValueError:
     print("An unexpected error occurrred. The data sample received or provided was not correct.")
     print("This may occur if the data sample is missing a frame (e.g., 5 frames expected, but only 4 received).")
-    if file:
-        file.write("\nAn error occurred, and the file may contain invalid data or not been complete.")
+    try:
+        file.write("\nAn error occurred, and the file may contain invalid data or not be complete.")
         file.close() 
+    except Exception as e:
+        pass
     input("Press 'Enter' to close the program.")
     exit()
 
 except Exception as e:
     print("An unexpected error occurrred. The following error messages was detected:")
     print(e)
-    if file:
-        file.write("\nAn error occurred, and the file may contain invalid data or not been complete.")
+    try:
+        file.write("\nAn error occurred, and the file may contain invalid data or not be complete.")
         file.close() 
+    except Exception as e:
+        pass
     input("Press 'Enter' to close the program.")
     exit()
