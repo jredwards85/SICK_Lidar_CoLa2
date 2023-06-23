@@ -1,7 +1,7 @@
 # SICK_Lidar_CoLa2
 This respository contains a selection of Python tools for handling the CoLa2 data output on the SICK microScan3, outdoorScan3 and nanoScan3.
 
-Currently two tools are available:
+There are three tools available are described below. Each tool is contained within a branch of this respository, with it's own readme.
 
 ### The CoLa2 Session Handler
 This program will allow the set-up of a CoLa2 session, and a request/response between the users PC and a SICK microScan3, outdoorScan3 or nanoScan3.
@@ -42,3 +42,6 @@ For example, it goes something like this:
 * Response from device confirms data output over UDP has been activated.
 * The data output should now be visible in a tool such as Wireshark.
 * CoLa2 session closed. TCP connection closed.
+
+### The Ethernet Data Output Viewer
+This program will read the most recent scan data of a SICK microScan3, outdoorScan3 or nanoScan3, and save this data to a .txt file in a readable format, i.e., converting the data and giving the values with a description. In addition, it's also possible to paste in a raw hex stream (UDP or TCP data sample) from Wireshark and save this to a .txt file rather than reading from a connected device. 
