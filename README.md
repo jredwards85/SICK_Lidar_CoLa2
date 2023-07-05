@@ -2,6 +2,7 @@
 This branch contains two files:
 - CoLa2_Session_Handler_V1.0.3
 - CoLa2_Session_Handler_V2.0.0
+  
 The version 2 (V2.0.0) supersedes version 1, however, version 1 can be continued if the user intends to send custom commands only (i.e., the user has constructed a valid CoLa2 command in HEX) 
 
 ### What does the 'CoLa2 Session Handler' do?
