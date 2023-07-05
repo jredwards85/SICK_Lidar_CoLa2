@@ -44,7 +44,8 @@ Version 2.0.0 created on 05.07.2023 by James Edwards
   - The tool prints the results of all 17 standard read variables in an easy to read manner. 
   - Any data that requires conversion is automatically converted into the correct values.
   - This tool can be used in place of the CoLa2 Data Output Activator tool.
-  - This tool can be used in combination to read TCP measurement data frames to use in the Ethernet Data Output Viewer (please see the other branch). 
+  - This tool can be used in combination to read TCP measurement data frames to use in the Ethernet Data Output Viewer (please see the other branch).
+  - Lastly, the code has been refined and optimised.
 
   ### How to use the program?
 Follow the prompts:
@@ -79,3 +80,7 @@ In most cases the program will tell you when a problem occurs. The most common e
 
 ### 'Hard-coded' values in the program.
 - The port '2122' is fixed. This is the current port used by the SICK microScan3, outdoorScan3 and nanoScan3.
+
+### Availability and lifecycle of this tool
+- This tool is available to all for business or personal usage.
+- The tool may not be maintained in the future, so in case of issues with the data, please review the Data Output manual at SICK.com.
