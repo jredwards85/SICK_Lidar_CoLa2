@@ -3,8 +3,10 @@ This respository contains a selection of Python tools for handling the CoLa2 dat
 
 There are three tools available, which are described below. Each tool is contained within a branch of this respository, with it's own readme.
 
-### The CoLa2 Session Handler
-This program will allow the set-up of a CoLa2 session, and a request/response between the users PC and a SICK microScan3, outdoorScan3 or nanoScan3.
+### The CoLa2 Session Handler (Versions 1 and 2)
+These program will allow the set-up of a CoLa2 session, and a request/response between the users PC and a SICK microScan3, outdoorScan3 or nanoScan3.
+
+With the version one, you can send a direct CoLa2 command, as shown with the examples below. However, version 2 is preprogrammed with all standard indexes, so you can read directly without creating a command string. Additionally, version 2 allows the use of methods as well as custom commands, as was the case in version 1.
 
 Example requests include:
 02 02 02 02 00 00 00 0c 00 00 53 49 43 4b 00 01 52 49 + [index]
