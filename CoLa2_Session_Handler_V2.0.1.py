@@ -571,16 +571,15 @@ def method_command_selection(ipAddress):
                 print("Error: Port was not a valid integer.")
 
         # Device/interface entry, error handling and conversion
-        print("Device type selection: EFI-pro: 0 - EtherNet/IP: 1 - EtherCAT: 2 - PROFINET: 3 - Standard Ethernet: 4")
+        print("Device type selection: EFI-pro: 0 - EtherNet/IP: 1 - PROFINET: 3 - Standard Ethernet/EtherCAT: 4")
         while True:
-            dataInterfaceIn = input("Enter interface type (0 ... 4 as above): ")
             try:
-                dataInterface = int(dataInterfaceIn)
-                if dataInterface < 0 or dataInterface > 4:
-                    print("Error: No valid interface type was given (0 ... 4).")
-                else:
+                dataInterface = int(input("Enter interface type (0, 1, 3 or 4): "))
+                if dataInterface == 0 or dataInterface == 1 or dataInterface == 3 or dataInterface == 4:
                     dataInterface = "{:02X}".format(dataInterface)
                     break
+                else:
+                    print("Error: No valid interface type was given (0, 1, 3 or 4).")
             except ValueError:
                 print("Error: The given value was not an integer.")
 
