@@ -1,5 +1,6 @@
-# Cola2_Data_Output_Activator_V1.0.0.py
+# Cola2_Data_Output_Activator_V1.0.1.py
 Version 1.0.0 created on 08.06.2023 by James Edwards
+Version 1.0.1 updated on 10.07.2023 by James Edwards (corrected interface mode selection. Mode 2 removed as mode 4 selects EtherCAT as well as standard Ethernet.)
 
 ### What does the 'CoLa2 Data Output Activator' do?
 - This program will trigger the UDP data output of a SICK microScan3, outdoorScan3 or nanoScan3 ('device') according to the given parameters.
@@ -22,9 +23,8 @@ Follow the prompts:
 4. Select the device type (0 ... 4).
 - EFI-pro: 0
 - EtherNet/IP: 1
-- EtherCAT: 2
 - PROFINET: 3
-- Standard Ethernet: 4 (e.g., for devices without an industrial fieldbus)
+- Standard Ethernet or EtherCAT: 4 (e.g., for devices without an industrial fieldbus or with EtherCAT)
 5. Select either full data output or custom data output.
 - Full data output provides the full scanning range, every scan and all data blocks
 - If selecting full data output, skip to step 11.
