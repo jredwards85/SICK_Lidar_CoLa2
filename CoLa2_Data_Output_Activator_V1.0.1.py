@@ -1,4 +1,4 @@
-# CoLa2 Data Output Activator - V1.0.0 
+# CoLa2 Data Output Activator - V1.0.1 
 # Written by James Edwards
 
 import math
@@ -68,17 +68,17 @@ except ValueError:
     exit()
 
 # Data Interface entry, error handling and conversion
-print("Device type selection: EFI-pro: 0 - EtherNet/IP: 1 - EtherCAT: 2 - PROFINET: 3 - Standard Ethernet: 4")
-dataInterfaceIn = input("Enter interface type (0 ... 4 as above): ")
+print("Device type selection: EFI-pro: 0 - EtherNet/IP: 1 - PROFINET: 3 - Standard Ethernet (and EtherCAT): 4")
+dataInterfaceIn = input("Enter interface type (0, 1, 3 or 4 as above): ")
 dataInterface = ""
 try:
-    if int(dataInterfaceIn) > -1 or int(dataInterfaceIn) < 5:
+    if int(dataInterfaceIn) == 0 or int(dataInterfaceIn) == 1 or int(dataInterfaceIn) == 3 or int(dataInterfaceIn) == 4:
         value = hex(int(dataInterfaceIn))[2:]
         if len(value) == 1:
             value = value.zfill(2)
         dataInterface = value
     else:
-        print("Error: No valid interface type was given (0 ... 4).")
+        print("Error: No valid interface type was given (0, 1, 3 or 4).")
         input("Press enter to exit.")
         exit()
 except ValueError:
